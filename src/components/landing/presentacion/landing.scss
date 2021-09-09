@@ -1,0 +1,107 @@
+@import '../../../assets//styles/colores.scss';
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+.presentacion {
+    h1 {
+        padding-top: 4rem;
+        margin: 0;
+        font-size: 8rem;
+        color: $main-color;
+        font-weight: 900;
+        line-height: 135px;
+        letter-spacing: -8px;
+    }
+
+
+
+    .prenda-carrusel {
+        overflow: hidden;
+        position: relative;
+        margin-top: 6rem;
+
+        &::before,
+        &::after {
+            @include white-gradient;
+            content: "";
+            height: 360px;
+            position: absolute;
+            width: 100px;
+            z-index: 2;
+        }
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        .prendas {
+            display: flex;
+            gap: 20px;
+            animation: slideshow 25s linear infinite;
+        }
+    }
+}
+
+.info-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    .parrago-info {
+        grid-column: 1/4;
+    }
+    .contenido-info {
+        grid-column: 2/4;
+
+        &:last-of-type {
+            grid-column: 4/6;
+        }
+    }
+    .imagen-texto {
+        grid-column: 2/6;
+    }
+    .ventas-texto {
+        grid-column: 1/4;
+        h2 {
+            color: $main-color;
+            font-size: 4rem;
+            margin-top: 2rem;
+        }
+    }
+    .lista-productos {
+        background-color: $accent-color-light;
+    }
+    h2 {
+        color: $accent-color;
+        margin: 0;
+        font-size: 6rem;
+        letter-spacing: -5px;
+    }
+    h3 {
+        color: $text-color;
+        font-weight: 200;
+    }
+    h4 {
+        font-weight: 400;
+    }
+}
+
+section {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 80rem;
+}
+
+@keyframes slideshow {
+    0% { transform: translateX(0); }
+	100% { transform: translateX(calc((-320px * 6)))}
+}

@@ -1,0 +1,88 @@
+@import '../../../assets/styles/colores.scss';
+
+
+a {
+    color: $text-color;
+    text-decoration: none;
+    text-align: center;
+    justify-self: center;
+}
+
+.container-all-db {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card-contenedora {
+    margin-top: 2rem;
+    a {
+        color: $main-color;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    h1 {
+        color: $accent-color;
+    }
+    button {
+        color: $main-color;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+    .btn-primary {
+        color: $text-light-color;
+    }
+
+}
+
+.drop-fix {
+    &:hover {
+        background-color: rgb(255, 221, 190);
+        color: $text-color;
+    }
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.botones {
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+.row-espacio {
+    margin-top: 1rem;
+}
+
+
+.nav-bar-link-fix {
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    padding: 0.5rem 1rem;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.danger-btn-fix {
+    color: $text-light-color;
+    &:hover {
+        color: rgb(26, 26, 26);
+    }
+}
+
+.btn-text-icon {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}

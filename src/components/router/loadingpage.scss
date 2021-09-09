@@ -1,0 +1,26 @@
+.loading-page {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    img {
+        vertical-align: middle;
+        justify-self: center;
+        animation: pulse 2s infinite;
+    }
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.80);
+	}
+
+	50% {
+		transform: scale(1.0);
+	}
+
+	100% {
+		transform: scale(0.90);
+	}
+}

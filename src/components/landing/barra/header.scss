@@ -1,0 +1,39 @@
+@import '../../../assets//styles/colores.scss';
+
+header {
+    background-color: rgb(253, 253, 253);
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index: 20;
+    .interior {
+        margin: 0 auto;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        max-width: 80rem;
+        display: flex;
+        align-items: stretch;
+        z-index: 1;
+        min-height: 6rem;
+        .logo {
+            width: 170px;
+        }
+        .navegacion {
+            justify-content: flex-end;
+            display: flex;
+            flex: 1 0 auto;
+            align-items: center;
+            gap: 1rem;
+            a {
+                text-decoration: none;
+                font-size: 1.1rem;
+                color: $accent-color;
+            }
+            .activado {
+                color: $main-color;
+            }
+        }
+    }
+
+}
+

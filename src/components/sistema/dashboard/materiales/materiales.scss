@@ -1,0 +1,55 @@
+@import '../../../../assets/styles/colores.scss';
+
+.titulo-card {
+    h5 {
+        margin: 0;
+        flex: 1;
+        color: $main-color-ultra-dark;
+    }
+    display: flex;
+    align-items: center;
+    div {
+        display: flex;
+        gap: .5rem;
+        span {
+            color: $accent-color;
+            &:hover {
+                color: $accent-color-light;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.presentacion {
+    flex-wrap: wrap;
+    display: flex;
+    gap: .5rem;
+}
+h1 {
+    color: $main-color-ultra-dark;
+    font-weight: 200;
+}
+
+.fake-card-img {
+    height: 41px;
+}
+
+h2 {
+    color: $accent-color;
+    font-weight: 200;
+}
+
+.anotaciones {
+    color: $accent-color-light;
+    width: 100%;
+}
+
+.btns-presentacion {
+    display: flex;
+    gap: .5rem;
+    margin-top: 1rem;
+}
+
+.filtro-btn {
+    width: 100%;
+}

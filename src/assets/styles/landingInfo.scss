@@ -1,0 +1,18 @@
+@import './colores.scss';
+
+
+section {
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 80rem;
+
+    h1 {
+        margin: 2.5rem 0;
+        font-size: 8rem;
+        color: $main-color;
+        font-weight: 900;
+        line-height: 135px;
+        letter-spacing: -8px;
+    }
+}

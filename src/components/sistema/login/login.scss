@@ -1,0 +1,109 @@
+@import '../../../assets/styles/colores.scss';
+
+.login-bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../assets/images/textilbg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .login-card {
+        .error-input {
+            border: 1px solid $accent-color-error !important;
+        }
+        
+        .error-input:focus {
+            outline: none !important;
+            border:1px solid $accent-color-error;
+            box-shadow: 0 0 5px $accent-color-error;
+          }
+        
+        input[type=text], input[type=password], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            width: 100%;
+            background-color: $main-color;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover {
+                background-color: $main-color-dark;
+            }
+            &:disabled {
+                background-color: $main-color-disabled;
+            }
+          }
+        
+          i {
+            width: 100%;
+            text-align: center;
+            cursor: pointer;
+            background-color: $main-color;
+            border-radius: 3rem;
+            height: 41px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $text-light-color;
+            &:hover {
+                background-color: $main-color-dark;
+            }
+          }
+        
+        .line {
+            width: 100%;
+            padding: .2rem;
+            border-bottom: 1px solid $main-color-disabled;
+            margin-bottom: .2rem;
+        }
+        a {
+            color: $accent-color;
+            text-decoration: none;
+            text-align: center;
+            justify-self: center;
+        }
+        
+        h5 {
+            color: $accent-color;
+            font-weight: bold;
+        }
+        display: grid;
+        justify-self: center;
+        background-color: white;
+        width: 400px;
+        border-radius: .3rem;
+        padding: 2rem;
+        img {
+            margin-bottom: 2rem;
+        }
+        h6 {
+            color: rgb(184, 184, 184);
+            font-size: .7rem;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .contrasena-btn {
+            align-items: center;
+            display: grid;
+            grid-template-columns: auto 41px;
+            gap: .5rem;
+        }
+    }
+}
+
+
+

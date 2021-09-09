@@ -1,0 +1,11 @@
+
+@import './colores.scss';
+$theme-colors: (
+    "primary": $main-color,
+    "secondary": $main-color-secondary,
+    "danger": $accent-color,
+    "ultra-dark": $main-color-ultra-dark,
+    "light": $light
+);
+
+@import "~bootstrap/scss/bootstrap";
